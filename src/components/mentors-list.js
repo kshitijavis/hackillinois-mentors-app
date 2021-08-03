@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import MentorBio from './mentor-bio';
 
 function MentorsList() {
     const fixedMentorData = [
@@ -19,7 +20,11 @@ function MentorsList() {
     const [mentors, setMentors] = useState(fixedMentorData)
 
     const mentorBios = mentors.map((mentor) =>
-        <li>{mentor.firstName}</li>
+        <li>
+            <MentorBio
+                mentorData={mentor}
+            />
+        </li>
     );
 
     return (
