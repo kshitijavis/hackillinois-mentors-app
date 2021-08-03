@@ -1,0 +1,21 @@
+.bio-group {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.bio-group > div, 
+.bio-group > img {
+    margin: 2%;
+}
+
+.profile-image {
+    width: 25%;
+    height: auto;
+}
+
+.profile-text {
+    flex-shrink: 20;
+}

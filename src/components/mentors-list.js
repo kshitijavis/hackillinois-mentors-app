@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import MentorBio from './mentor-bio';
+import '../styles/mentors-list.css'
 
 function MentorsList() {
     const [mentors, setMentors] = useState([])
@@ -10,7 +11,6 @@ function MentorsList() {
             .then(result => result.json())
             .then(
                 (result) => {
-                    console.log(result);
                     setMentors(result.data);
                 },
                 (error) => {setError(error)}
@@ -32,7 +32,9 @@ function MentorsList() {
         return (
             <div>
                 <h1>Meet our Mentors</h1>
-                <ul>{mentorBios}</ul>
+                <ul className='mentor-list'>
+                    {mentorBios}
+                </ul>
             </div>
         )
     }
