@@ -11,3 +11,9 @@
 .flex-center {
     justify-content: center;
 }
+
+.flex-row-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

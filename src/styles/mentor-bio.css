@@ -1,21 +1,12 @@
-.bio-group {
+.bio-card {
     padding-bottom: 1%;
+    margin: 1%;
     padding-top: 1%;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-}
-
-.bio-group > div, 
-.bio-group > img {
-    margin: 2%;
+    width: 400px;
+    border: 2px solid black ;
 }
 
 .profile-image {
-    width: 25%;
+    width: 100%;
     height: auto;
-}
-
-.profile-text {
-    flex-shrink: 20;
 }

@@ -18,11 +18,7 @@ function MentorsList() {
     });
 
     const mentorBios = mentors.map((mentor) =>
-        <li>
-            <MentorBio
-                mentorData={mentor}
-            />
-        </li>
+        <MentorBio mentorData={mentor}/>
     );
 
     // Rendering
@@ -32,9 +28,9 @@ function MentorsList() {
         return (
             <div>
                 <h1>Meet our Mentors</h1>
-                <ul className='mentor-list'>
+                <div className= 'flex-row-wrap mentor-list'>
                     {mentorBios}
-                </ul>
+                </div>
             </div>
         )
     }
