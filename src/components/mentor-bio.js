@@ -1,5 +1,5 @@
-import '../styles/mentor-bio.css'
-import '../styles/common.css'
+import '../styles/mentor-bio.css';
+import '../styles/fonts.css';
 
 function MentorBio(props) {
     return (
@@ -9,8 +9,8 @@ function MentorBio(props) {
                 className='profile-image'
             />
             <div>
-                <h2>{props.mentorData.firstName} {props.mentorData.lastName}</h2>
-                <p>{props.mentorData.description}</p>
+                <h2 className='bio-title'>{props.mentorData.firstName} {props.mentorData.lastName}</h2>
+                <p className='bio-content'>{props.mentorData.description}</p>
             </div>
         </div>
     )

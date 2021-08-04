@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import MentorBio from './mentor-bio';
-import '../styles/mentors-list.css'
+import '../styles/mentors-list.css';
+import '../styles/fonts.css';
 
 function MentorsList() {
     const [mentors, setMentors] = useState([])
@@ -26,7 +27,7 @@ function MentorsList() {
         return (<div>Error: {error.message}</div>)
     } else {
         return (
-            <div>
+            <div className='mentor-page'>
                 <h1>Meet our Mentors</h1>
                 <div className= 'flex-row-wrap mentor-list'>
                     {mentorBios}
