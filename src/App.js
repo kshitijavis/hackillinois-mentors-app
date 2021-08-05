@@ -5,8 +5,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1 className='hackillinois-logo'>HACK ILLINOIS</h1>
       </header>
-      <MentorsList></MentorsList>
+      <main>
+        <MentorsList></MentorsList>
+      </main>
     </div>
   );
 }

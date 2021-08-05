@@ -18,8 +18,14 @@ function MentorsList() {
             )
     });
 
-    const mentorBios = mentors.map((mentor) =>
-        <MentorBio mentorData={mentor}/>
+    const mentorBios = mentors.map((mentor, idx) =>
+        // Currently using index of mentor array as key since mentor array is static
+        // If we want to alter array, this key needs to be changed
+        // Maybe use mentor id if retrieving from database
+        <MentorBio 
+            key={idx}
+            mentorData={mentor}
+        />
     );
 
     // Rendering
@@ -28,8 +34,11 @@ function MentorsList() {
     } else {
         return (
             <div className='mentor-page'>
-                <h1>Meet our Mentors</h1>
-                <div className= 'flex-row-wrap mentor-list'>
+                <h1 id='mentor-page-intro'>Meet our Mentors</h1>
+                <div 
+                    id='mentor-list' 
+                    className= 'flex-row-wrap mentor-list'
+                >
                     {mentorBios}
                 </div>
             </div>
