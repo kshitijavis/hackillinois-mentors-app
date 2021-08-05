@@ -30,17 +30,17 @@ function MentorsList() {
 
     // Rendering
     if (error) {
-        return (<div>Error: {error.message}</div>)
+        return (<div>Error loading mentors: {error.message}</div>)
     } else {
         return (
             <div className='mentor-page'>
                 <h1 id='mentor-page-intro'>Meet our Mentors</h1>
-                <div 
+                <ul 
                     id='mentor-list' 
                     className= 'flex-row-wrap mentor-list'
                 >
                     {mentorBios}
-                </div>
+                </ul>
             </div>
         )
     }

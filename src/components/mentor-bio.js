@@ -5,7 +5,7 @@ function MentorBio(props) {
     const fullName = `${props.mentorData.firstName} ${props.mentorData.lastName}`
 
     return (
-        <div className='bio-card'>
+        <li className='bio-card'>
             <img
                 src={props.mentorData.profile}
                 className='profile-image'
@@ -16,7 +16,7 @@ function MentorBio(props) {
                 <h2 className='bio-title'>{fullName}</h2>
                 <p className='bio-content'>{props.mentorData.description}</p>
             </div>
-        </div>
+        </li>
     )
 }
 
